@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Jua|Song+Myung');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('images/stardust.png');
+    font-family: 'Song Myung', serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Jua', sans-serif;
+}
+
+.text-white {
+    color: whitesmoke;
+}
+
+h1.title {
+    text-align: center !important;
+}
+
+h1 a {
+    color: white;
+}
+
+h1 a:hover {
+    color: rgb(200,200,200);
+}
+
+.navbar-brand h1 {
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.navbar-item a {
+    color: whitesmoke;
+}
+
+.navbar-item a:hover {
+    color: rgb(200,200,200);
+}
+
+.navbar {
+    margin-bottom: 3em;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.card h1 {
+    margin: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.home {
+    margin-bottom: 2em;
+}
+
+.username {
+    color: hsl(217, 71%, 53%);
+}
