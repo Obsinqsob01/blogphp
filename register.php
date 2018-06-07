@@ -11,11 +11,12 @@
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
         $pass = $_POST["password"];
+        $pass = base64_encode($pass);
 
         $sql = "INSERT INTO usuarios(nombre, email, password) VALUES('$nombre', '$email', '$pass')";
 
         if($mysqli -> query($sql) === TRUE){
-            $_SESSION["login"] = true;
+            $_SESSION["login"] = TRUE;
             $_SESSION["id"] = $mysqli-> insert_id;
             $_SESSION["nombre"] = $nombre;
             $_SESSION["email"] = $email;

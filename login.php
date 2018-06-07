@@ -11,13 +11,14 @@
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $email = $_POST["email"];
         $pass = $_POST["password"];
+        $pass = base64_encode($pass);
 
         $sql = "SELECT * FROM usuarios WHERE email = '$email' AND password = '$pass'";
     
         $result = $mysqli->query($sql);
 
         if($result -> num_rows > 0){
-            $_SESSION["login"] = true;
+            $_SESSION["login"] = TRUE;
             $_SESSION["id"] = $result -> fetch_assoc()["id"];
             $_SESSION["nombre"] = $nombre;
             $_SESSION["email"] = $email;
