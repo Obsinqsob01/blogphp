@@ -60,7 +60,7 @@
                     <br>
                     <a href="/login.php">¿Ya tienes una cuenta?</a>
                     <br>
-                    <button type="submit" class="button is-light">Iniciar sesión</button>
+                    <button type="submit" class="button is-light">Registrarme</button>
                 </form>
             </div>
         </div>

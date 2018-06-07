@@ -49,6 +49,9 @@
                 <div class="navbar-menu">
                     <div class="navbar-end">
                         <div class="navbar-item">
+                            <a href="profile.php?id=<?php echo $_SESSION["id"];?>">Mi perfil</a>
+                        </div>
+                        <div class="navbar-item">
                             <a href="nuevoPost.php">Nuevo post</a>
                         </div>
                         <div class="navbar-item">
